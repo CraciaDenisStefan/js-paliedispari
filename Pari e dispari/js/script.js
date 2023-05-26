@@ -13,7 +13,7 @@ if (scelta === "pari") {
 
 let scelta_numero = parseInt(prompt("Scegli un numero da 1 a 5 "));
 
-while (scelta_numero < 1 || scelta_numero > 5) {
+while (isNaN(scelta_numero) || scelta_numero < 1 || scelta_numero > 5) {
     scelta_numero = parseInt(prompt("Scegli un numero tra 1 e 5 "));
     }
       
